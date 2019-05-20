@@ -10,7 +10,7 @@
 
 'use strict';
 
-const EventEmitter = require('events');
+const EventEmitter = require('eventemitter3');
 const ReactNative = require('react-native/Libraries/Renderer/shims/ReactNative');
 const { Image, StyleSheet, View, requireNativeComponent, NativeModules } = require('react-native');
 

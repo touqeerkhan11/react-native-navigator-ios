@@ -12,10 +12,24 @@
 		5BB804B5221A042A001462EF /* RCTNavigatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB804AE221A042A001462EF /* RCTNavigatorManager.m */; };
 		5BB804B6221A042A001462EF /* RCTNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB804B2221A042A001462EF /* RCTNavigator.m */; };
 		5BD20FC5221C3E8B00167C1A /* RCTWrapperViewControllerWithNavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB804BB221A070B001462EF /* RCTWrapperViewControllerWithNavItem.m */; };
+		8677CB732292AB2D00360518 /* RCTWrapperViewControllerWithNavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB804BB221A070B001462EF /* RCTWrapperViewControllerWithNavItem.m */; };
+		8677CB742292AB2D00360518 /* RCTNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB804B2221A042A001462EF /* RCTNavigator.m */; };
+		8677CB752292AB2D00360518 /* RCTNavigatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB804AE221A042A001462EF /* RCTNavigatorManager.m */; };
+		8677CB762292AB2D00360518 /* RCTNavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB804AC221A042A001462EF /* RCTNavItem.m */; };
+		8677CB772292AB2D00360518 /* RCTNavItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB804AB221A042A001462EF /* RCTNavItemManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5BB803E422198BB7001462EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8677CB0B2292A24A00360518 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -38,10 +52,18 @@
 		5BB804B2221A042A001462EF /* RCTNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNavigator.m; sourceTree = "<group>"; };
 		5BB804BA221A070B001462EF /* RCTWrapperViewControllerWithNavItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTWrapperViewControllerWithNavItem.h; sourceTree = "<group>"; };
 		5BB804BB221A070B001462EF /* RCTWrapperViewControllerWithNavItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTWrapperViewControllerWithNavItem.m; sourceTree = "<group>"; };
+		8677CB0D2292A24A00360518 /* libNavigator-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libNavigator-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5BB803E322198BB7001462EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8677CB0A2292A24A00360518 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				5BB803E622198BB7001462EF /* libNavigatorIOS.a */,
+				8677CB0D2292A24A00360518 /* libNavigator-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +119,23 @@
 			productReference = 5BB803E622198BB7001462EF /* libNavigatorIOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		8677CB0C2292A24A00360518 /* Navigator-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8677CB152292A24A00360518 /* Build configuration list for PBXNativeTarget "Navigator-tvOS" */;
+			buildPhases = (
+				8677CB092292A24A00360518 /* Sources */,
+				8677CB0A2292A24A00360518 /* Frameworks */,
+				8677CB0B2292A24A00360518 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Navigator-tvOS";
+			productName = "Navigator-tvOS";
+			productReference = 8677CB0D2292A24A00360518 /* libNavigator-tvOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +146,9 @@
 				ORGANIZATIONNAME = flowkey;
 				TargetAttributes = {
 					5BB803E522198BB7001462EF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8677CB0C2292A24A00360518 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -123,6 +166,7 @@
 			projectRoot = "";
 			targets = (
 				5BB803E522198BB7001462EF /* NavigatorIOS */,
+				8677CB0C2292A24A00360518 /* Navigator-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +181,18 @@
 				5BD20FC5221C3E8B00167C1A /* RCTWrapperViewControllerWithNavItem.m in Sources */,
 				5BB804B5221A042A001462EF /* RCTNavigatorManager.m in Sources */,
 				5BB804B3221A042A001462EF /* RCTNavItemManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8677CB092292A24A00360518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8677CB732292AB2D00360518 /* RCTWrapperViewControllerWithNavItem.m in Sources */,
+				8677CB742292AB2D00360518 /* RCTNavigator.m in Sources */,
+				8677CB752292AB2D00360518 /* RCTNavigatorManager.m in Sources */,
+				8677CB762292AB2D00360518 /* RCTNavItem.m in Sources */,
+				8677CB772292AB2D00360518 /* RCTNavItemManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +335,34 @@
 			};
 			name = Release;
 		};
+		8677CB132292A24A00360518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85SLC694R5;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Debug;
+		};
+		8677CB142292A24A00360518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85SLC694R5;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -296,6 +380,15 @@
 			buildConfigurations = (
 				5BB803F022198BB7001462EF /* Debug */,
 				5BB803F122198BB7001462EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8677CB152292A24A00360518 /* Build configuration list for PBXNativeTarget "Navigator-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8677CB132292A24A00360518 /* Debug */,
+				8677CB142292A24A00360518 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
